@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Promedios</title>
+</head>
+<body>
+    <h1>Calculadora de Promedio</h1>
+
+    <div class="inicio-sesion">
+        <div class="inicio-usuario">
+        <label class="nombre-usuario" for="nombre">Nombre del alumno:</label>
+        <input class="input-text" type="text" id="nombre">
+    </div>
+
+    <div>
+        <label class="nombre-materias" for="Lengua">Lengua:</label>
+        <input class="input-text" type="number" id="Lengua" min="1" max="10">
+    </div>
+
+    <div>
+        <label class="nombre-materias" for="Historia">Historia:</label>
+        <input class="input-text" type="number" id="Historia" min="1" max="10">
+    </div>
+
+    <div>
+        <label class="nombre-materias" for="Matematicas">Matemáticas:</label>
+        <input class="input-text" type="number" id="Matematicas" min="1" max="10">
+    </div>
+</div>
+    <button class="btn" onclick="calcularPromedio()">Calcular Promedio</button>
+
+    <div class="promedio" id="resultado"></div>
+
+    <script src="../main.js"></script>
+</body>
+</html>
+
+
+
+
+
