@@ -1,5 +1,4 @@
 //Inicio de sesion
-
 const usuario = "Javier";
 const contraseña = "js2023";
 
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const enlace = document.getElementById("enlace");
     const cerrarModal = document.getElementById("cerrarModal");
 
-    // Cargar usuario desde localStorage si está disponible
+
     const usuarioGuardado = cargarDatosDesdeLocalStorage("usuario");
     if (usuarioGuardado) {
         document.getElementById("username").value = usuarioGuardado;
@@ -29,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             enlace.href = "notas/notas.html";
             enlace.style.display = "block";
 
+            
             guardarDatosEnLocalStorage("usuario", usuario);
 
             setTimeout(function () {
@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             mensajeTexto.textContent = "No eres el tutor";
         }
-        
     });
 
     cerrarModal.addEventListener("click", function () {
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// localStorage
+// Función localStorage
 function guardarDatosEnLocalStorage(key, datos) {
     localStorage.setItem(key, JSON.stringify(datos));
 }
@@ -54,9 +53,8 @@ function cargarDatosDesdeLocalStorage(key) {
     const datosGuardados = localStorage.getItem(key);
     return datosGuardados ? JSON.parse(datosGuardados) : null;
 }
+// Calcular notas
 
-
-// Calcular motas
 function calcularPromedio() {
     const nombre = document.getElementById("nombre").value;
     const Lengua = parseFloat(document.getElementById("Lengua").value);
