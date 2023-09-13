@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (usuario === user && contraseña === password) {
             mensajeTexto.textContent = "Bienvenido " + usuario;
             enlace.textContent = "INGRESAR";
-            enlace.href = "notas/bienvenido.html";
+            enlace.href = "notas/notas.html";
             enlace.style.display = "block";
         
             setTimeout(function () {
