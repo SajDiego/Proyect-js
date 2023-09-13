@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const enlace = document.getElementById("enlace");
     const cerrarModal = document.getElementById("cerrarModal");
 
+    // Cargar usuario desde localStorage si está disponible
+    const usuarioGuardado = cargarDatosDesdeLocalStorage("usuario");
+    if (usuarioGuardado) {
+        document.getElementById("username").value = usuarioGuardado;
+    }
+
     loginButton.addEventListener("click", function () {
         const usernameInput = document.getElementById("username");
         const passwordInput = document.getElementById("password");
@@ -22,21 +28,33 @@ document.addEventListener("DOMContentLoaded", function () {
             enlace.textContent = "INGRESAR";
             enlace.href = "notas/notas.html";
             enlace.style.display = "block";
-        
+
+            guardarDatosEnLocalStorage("usuario", usuario);
+
             setTimeout(function () {
                 window.location.href = enlace.href;
             }, 3000);
         } else {
             mensajeTexto.textContent = "No eres el tutor";
         }
-
-       
+        
     });
 
     cerrarModal.addEventListener("click", function () {
         mensajeModal.style.display = "none"; 
     });
 });
+
+// localStorage
+function guardarDatosEnLocalStorage(key, datos) {
+    localStorage.setItem(key, JSON.stringify(datos));
+}
+
+function cargarDatosDesdeLocalStorage(key) {
+    const datosGuardados = localStorage.getItem(key);
+    return datosGuardados ? JSON.parse(datosGuardados) : null;
+}
+
 
 // Calcular motas
 function calcularPromedio() {
