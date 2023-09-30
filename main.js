@@ -80,7 +80,7 @@ const calcularPromedio = () => {
         // Agregar el nuevo promedio al arreglo de promedios guardados
         promediosGuardados.push(promedioData);
 
-        // Guardar los promedios actualizados en el localStorage (Pero la realidad es que no guarda o yo no puedo acceder loa promedios guardados )
+        // Guardar los promedios actualizados en el localStorage (Pero la realidad es que no guarda o yo no puedo acceder los promedios guardados )
         localStorage.setItem("promedios", JSON.stringify(promediosGuardados));
 
         // Mostrar el promedio en la página junto a un botón de borrado
@@ -104,3 +104,4 @@ const borrarPromedio = (button) => {
 
 //Aclaraciones: intente agregar una tabla abajo para poder guardar los Promedios calculados y me perdi y no pude hacerlo.
 // Se que tambien la idea es que los nombres de las variables esten en ingles. Pero me perdia horrores, supongo que es por falta de practica. Entonces preferí dejar así
+// En la linea 21 el console me tiraba un error y no hubo forma de poder corregir ya que no sabia que era. Asi que espero que sepan poder ayudarme con eso (pregunte a copañeros y no hubo forma)
