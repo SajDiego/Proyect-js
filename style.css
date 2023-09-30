@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
+}
 
 body{ 
     background: linear-gradient(#13b270, rgb(65, 66, 159)) ;
@@ -32,10 +32,21 @@ body{
 .nombre-usuario{
     padding: 10px;
 }
+
+.input-name{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flexbox;
+    flex-direction: column;
+}
 .input-text{
     padding: 5px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flexbox;
+    flex-direction: column;
 }
 
 .btn{ 
@@ -76,4 +87,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    
 }

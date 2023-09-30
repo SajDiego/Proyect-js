@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Iniciar Sesión</title>
 </head>
 <body>
     <h1>Iniciar Sesión</h1>
 
     <div class="inicio-sesion">
         <div class="inicio-usuario">
-        <label class="nombre-usuario" for="username">Nombre de Usuario:</label>
-        <input class="input-text" type="text" id="username">
-    
-        <label class="inicio-usuario" for="password">Contraseña:</label>
-        <input class="input-text"  type="password" id="password">
-    </div>
-
-    <button class="btn" id="botonInicio">Iniciar Sesión</button>
-
-    <div id="mensajeModal">
-        <div>
-            <h4 class="mensaje-bienvenida">Mensaje</h4>
-            <p id="mensajeTexto"></p>
-            <a id="enlace" style="display: none;" target="_blank">Ir al enlace</a>
+            <label class="nombre-usuario" for="username">Nombre de Usuario:</label>
+            <input class="input-name" type="text" id="username">
+        
+            <label class="inicio-usuario" for="password">Contraseña:</label>
+            <input class="input-name" type="password" id="password">
         </div>
-        <button class="btn1" id="cerrarModal">Cerrar</button>
+
+        <button class="btn" id="botonInicio">Iniciar Sesión</button>
+
+        <div id="mensajeModal">
+            <div>
+                <h4 class="mensaje-bienvenida">Mensaje</h4>
+                <p id="mensajeTexto"></p>
+                <a id="enlace" style="display: none;" target="_blank">Ir al enlace</a>
+            </div>
+            <button class="btn1" id="cerrarModal">Cerrar</button>
+        </div>
     </div>
-</div>
 
     <script src="./main.js"></script>
 </body>
