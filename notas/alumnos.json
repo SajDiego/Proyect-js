@@ -1,0 +1,62 @@
+[
+    {
+      "nombre": "Juan Lopez",
+      "Lengua": 8,
+      "Historia": 7,
+      "Matematicas": 9
+    },
+    {
+      "nombre": "Diego Perez",
+      "Lengua": 7,
+      "Historia": 6,
+      "Matematicas": 8
+    },
+    {
+      "nombre": "Julio Roca",
+      "Lengua": 9,
+      "Historia": 8,
+      "Matematicas": 9
+    },
+    {
+      "nombre": "Carina Barco",
+      "Lengua": 6,
+      "Historia": 7,
+      "Matematicas": 5
+    },
+    {
+      "nombre": "Jorge Diaz",
+      "Lengua": 7,
+      "Historia": 8,
+      "Matematicas": 7
+    },
+    {
+      "nombre": "Vaneza Solis",
+      "Lengua": 8,
+      "Historia": 7,
+      "Matematicas": 8
+    },
+    {
+      "nombre": "Ana Rodriguez",
+      "Lengua": 9,
+      "Historia": 9,
+      "Matematicas": 9
+    },
+    {
+      "nombre": "Rafael Nuñez",
+      "Lengua": 8,
+      "Historia": 7,
+      "Matematicas": 8
+    },
+    {
+      "nombre": "Josefina Salado",
+      "Lengua": 7,
+      "Historia": 8,
+      "Matematicas": 8
+    },
+    {
+      "nombre": "Daniel Ruiz",
+      "Lengua": 8,
+      "Historia": 9,
+      "Matematicas": 7
+    }
+  ]
